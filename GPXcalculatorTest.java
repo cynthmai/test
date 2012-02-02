@@ -92,8 +92,8 @@ public class GPXcalculatorTest extends TestCase {
 		trkpts.add(new GPXtrkpt(5, 5, new Date()));
 		GPXtrkseg oneObj = new GPXtrkseg(trkpts);
 		trksegs.add(oneObj);
-		GPXtrk oneEmpty = new GPXtrk("oneEmpty", trksegs);
-		assertEquals(0,GPXcalculator.calculateDistanceTraveled(oneEmpty));
+		GPXtrk one = new GPXtrk("one", trksegs);
+		assertEquals(0,GPXcalculator.calculateDistanceTraveled(one));
 	}
 
 	/**
